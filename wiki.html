@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wikipedia-like Page</title>
+    <link rel="stylesheet" href="wiki.css" />
+</head>
+<body>
+    <div id="mw-page-base" class="mw-body" role="main">
+        <header id="mw-head" class="mw-header" role="banner">
+            <div id="mw-head-base" class="mw-header-base">
+<a href="#" class="mw-wiki-logo" title="Wikipedia">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Wikipedia-logo.png" alt="Wikipedia Logo" />
+    <span class="wiki-name">Wikipedia</span>
+</a>
+                <form id="searchform" action="#" method="get" role="search">
+                    <input type="search" id="searchInput" name="search" placeholder="Search Wikipedia" />
+                    <button type="submit" id="searchButton">Search</button>
+                </form>
+            </div>
+        </header>
+
+        <div id="mw-content-container" class="mw-content-container">
+            <nav id="mw-panel" class="mw-sidebar" role="navigation" aria-label="Sidebar">
+                <div class="portal" id="p-navigation">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="#">Main page</a></li>
+                        <li><a href="#">Contents</a></li>
+                        <li><a href="#">Current events</a></li>
+                        <li><a href="#">Random article</a></li>
+                        <li><a href="#">About Wikipedia</a></li>
+                    </ul>
+                </div>
+                <div class="portal" id="p-tb">
+                    <h3>Tools</h3>
+                    <ul>
+                        <li><a href="#">What links here</a></li>
+                        <li><a href="#">Related changes</a></li>
+                        <li><a href="#">Upload file</a></li>
+                        <li><a href="#">Special pages</a></li>
+                        <li><a href="#">Permanent link</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main id="mw-content-text" class="mw-content-text" role="main">
+                <h1 id="firstHeading" class="firstHeading">Sample Wikipedia Article</h1>
+                <div id="bodyContent" class="mw-body-content">
+                    <p><b>Wikipedia</b> is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation.</p>
+                    <h2>History</h2>
+                    <p>Wikipedia was launched on January 15, 2001, by Jimmy Wales and Larry Sanger. It has grown rapidly to become one of the largest reference websites.</p>
+                    <h2>Content</h2>
+                    <p>Wikipedia contains millions of articles in multiple languages, covering a wide range of topics.</p>
+                    <h3>Editing</h3>
+                    <p>Anyone can edit Wikipedia articles, and the community works to ensure accuracy and neutrality.</p>
+                    <h2>References</h2>
+                    <ol>
+                        <li><cite>Wikipedia contributors. "Wikipedia". Wikipedia, The Free Encyclopedia.</cite></li>
+                    </ol>
+                </div>
+            </main>
+        </div>
+
+        <footer id="footer" role="contentinfo">
+            <div id="footer-info">
+                
+                <p>Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

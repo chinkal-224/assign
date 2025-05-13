@@ -1,0 +1,163 @@
+/* Reset and base styles */
+body {
+    font-family: "Georgia", serif;
+    background-color: #f8f9fa;
+    color: #202122;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+a {
+    color: #0645ad;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#mw-page-base {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #a2a9b1;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Header */
+#mw-head {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #a2a9b1;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mw-wiki-logo img {
+    height: 40px;
+    vertical-align: middle;
+}
+
+.wiki-name {
+    font-family: "Georgia", serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #000;
+    margin-left: 8px;
+    vertical-align: middle;
+    user-select: none;
+}
+
+#searchform {
+    display: flex;
+    align-items: center;
+}
+
+#searchInput {
+    font-size: 14px;
+    padding: 5px 8px;
+    border: 1px solid #a2a9b1;
+    border-radius: 2px 0 0 2px;
+    width: 200px;
+}
+
+#searchButton {
+    font-size: 14px;
+    padding: 5px 10px;
+    border: 1px solid #a2a9b1;
+    border-left: none;
+    background-color: #f8f9fa;
+    cursor: pointer;
+    border-radius: 0 2px 2px 0;
+}
+
+#searchButton:hover {
+    background-color: #e1e1e1;
+}
+
+/* Content container */
+#mw-content-container {
+    display: flex;
+    padding: 15px;
+}
+
+/* Sidebar */
+.mw-sidebar {
+    width: 200px;
+    border-right: 1px solid #a2a9b1;
+    padding-right: 15px;
+    font-size: 14px;
+}
+
+.mw-sidebar h3 {
+    font-size: 16px;
+    margin-top: 0;
+    border-bottom: 1px solid #a2a9b1;
+    padding-bottom: 5px;
+}
+
+.mw-sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.mw-sidebar ul li {
+    margin-bottom: 8px;
+}
+
+/* Main content */
+.mw-content-text {
+    flex-grow: 1;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+.firstHeading {
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid #a2a9b1;
+    padding-bottom: 3px;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+ol {
+    padding-left: 20px;
+}
+
+footer#footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #a2a9b1;
+    padding: 10px 15px;
+    font-size: 12px;
+    color: #555;
+    text-align: center;
+}
+
+footer#footer a {
+    color: #0645ad;
+    text-decoration: none;
+}
+
+footer#footer a:hover {
+    text-decoration: underline;
+}
