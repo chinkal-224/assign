@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pomodoro Timer</title>
+  <link rel="stylesheet" href="17maystyle.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🍅 Pomodoro Timer</h1>
+
+    <div class="settings">
+      <label>Work (min): <input type="number" id="work" value="25" /></label>
+      <label>Short Break (min): <input type="number" id="shortBreak" value="5" /></label>
+      <label>Long Break (min): <input type="number" id="longBreak" value="15" /></label>
+      <label>Pomodoros before long break: <input type="number" id="cycles" value="4" /></label>
+    </div>
+
+    <h2 id="session-type">Session: Work</h2>
+    <div id="timer">25:00</div>
+
+    <div class="buttons">
+      <button onclick="startTimer()">Start</button>
+      <button onclick="pauseTimer()">Pause</button>
+      <button onclick="resetTimer()">Reset</button>
+    </div>
+
+    <div id="pomodoro-cycle">🔴 ⚪ ⚪ ⚪</div>
+  </div>
+
+  <script src="17mayscript.js"></script>
+</body>
+</html>
