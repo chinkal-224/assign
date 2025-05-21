@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="16maystyle.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>💰 Expense Tracker</h2>
+
+    <div class="summary">
+      <p>Balance: $<span id="balance">0</span></p>
+      <p>Income: $<span id="income">0</span></p>
+      <p>Expense: $<span id="expense">0</span></p>
+    </div>
+
+    <form id="transaction-form">
+      <input type="text" id="description" placeholder="Enter description" required />
+      <input type="number" id="amount" placeholder="Enter amount (e.g. -50, 100)" required />
+      <button type="submit">Add Transaction</button>
+    </form>
+
+    <ul id="transaction-list"></ul>
+  </div>
+
+  <script src="16mayscript.js"></script>
+</body>
+</html>
