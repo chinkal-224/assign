@@ -1,0 +1,73 @@
+{\rtf1\fbidis\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset1 Segoe UI Symbol;}{\f2\fnil Calibri;}{\f3\fnil\fcharset1 Segoe UI Emoji;}{\f4\fnil\fcharset1 Segoe UI Symbol;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 Advanced Static To-Do List (No State)\par
+\f1\u-10180?\u-8273?\f2  \f0 Objective:\par
+Create a static to-do list application using React that groups tasks by category, conditionally renders completion status, and displays detailed descriptions \f2\emdash  without using any state (useState, useReducer, etc.).\par
+\par
+\f3\u-10178?\u-8727?\f2  \f0 What You'll Practice:\par
+JSX rendering\par
+\par
+Array .map() and .filter()\par
+\par
+Conditional rendering\par
+\par
+Grouping data dynamically\par
+\par
+Component structure and styling\par
+\par
+\f1\u-10179?\u-9013?\f2  \f0 Requirements:\par
+1. Data Structure:\par
+Inside your component, create a hardcoded array of todo items. Each item should contain:\par
+\{\par
+  id: 1,\par
+  title: "Finish report",\par
+  description: "Monthly financial report",\par
+  category: "Work",\par
+  completed: true\par
+\}\par
+Include at least 6 items, spanning 3 different categories (e.g., Work, Personal, Hobby).\par
+\par
+2. Grouping by Category:\par
+Dynamically extract unique categories from the data.\par
+\par
+Render each category as a section with a heading.\par
+\par
+List the corresponding tasks under each category.\par
+\par
+3. Rendering Tasks:\par
+For each task:\par
+\par
+Show \f4\u9989?\f2  \f0 before the title if it's completed.\par
+\par
+Show \f4\u10060?\f2  \f0 if it's not completed.\par
+\par
+Below the title, render the description in a smaller or italic font.\par
+\par
+4. No Interactivity:\par
+This is a static assignment:\par
+\par
+Do NOT use state hooks like useState.\par
+\par
+Do NOT use event handlers like onClick.\par
+\par
+\f3\u-10179?\u-8795?\u-497?\f2  \f0 Example Output:\par
+\f3\u-10179?\u-8766?\u-497?\f2  \f0 Grouped To-Do List\par
+\par
+Work\par
+\f4\u9989?\f2  \f0 Finish report\par
+    Monthly financial report\par
+\f4\u10060?\f2  \f0 Team meeting\par
+    Sync with dev team\par
+\par
+Personal\par
+\f4\u10060?\f2  \f0 Buy groceries\par
+    Milk, eggs, and bread\par
+\f4\u9989?\f2  \f0 Gym\par
+    Leg day workout\par
+\par
+Hobby\par
+\f4\u10060?\f2  \f0 Read book\par
+    Finish 'Atomic Habits'\par
+\f4\u9989?\f2  \f0 Painting session\par
+    Try new watercolor technique\par
+}
