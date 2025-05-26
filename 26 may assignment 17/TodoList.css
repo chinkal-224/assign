@@ -1,0 +1,25 @@
+.todo-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: auto;
+}
+
+.category-section {
+  margin-bottom: 30px;
+}
+
+.todo-item {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.todo-title {
+  font-weight: bold;
+}
+
+.todo-description {
+  font-size: 0.9em;
+  color: #555;
+  margin-left: 25px;
+}
