@@ -1,0 +1,36 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset1 Segoe UI Symbol;}{\f2\fnil\fcharset2 Symbol;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs28\lang9 SIMPLE TO-DO LIST\fs22\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 OBJECTIVE:\par
+{\pntext\f2\'B7\tab}Build a simple TO-DO LIST APP in React to practice:\par
+{\pntext\f2\'B7\tab}React state (useState)\par
+{\pntext\f2\'B7\tab}Capturing input data\par
+{\pntext\f2\'B7\tab}Displaying a list\par
+
+\pard\sa200\sl276\slmult1\fs28 REQUIREMENTS:\fs22\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 INPUT FIELD:\par
+{\pntext\f2\'B7\tab}Text input to type a to-do item.\par
+{\pntext\f2\'B7\tab}A button to add the item to the list.\par
+
+\pard\sa200\sl276\slmult1\fs28 STATE MANAGEMENT:\fs22\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Use useState to store:\par
+{\pntext\f2\'B7\tab}Current input value\par
+{\pntext\f2\'B7\tab}A list of to-do items (as an array)\par
+
+\pard\sa200\sl276\slmult1\fs24 DISPLAY ITEMS:\fs22\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Show the list below the input field.\par
+{\pntext\f2\'B7\tab}Each item should appear as a separate list item.\par
+
+\pard\sa200\sl276\slmult1\fs28 NO DELETE OR EDIT:\fs22\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Only adding is required.\fs28\par
+
+\pard\sa200\sl276\slmult1 DATA STORAGE:\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\fs22 No localStorage or backend.\par
+{\pntext\f2\'B7\tab}Store in React state only.\f1\par
+}
