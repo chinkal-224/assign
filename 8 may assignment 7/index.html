@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Navbar Tasks</title>
+  <style>
+    body {
+      background-color: #b2f4f4;
+      font-family: Arial, sans-serif;
+      padding: 30px;
+    }
+
+    .navbar {
+      background-color: #005757;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      margin-bottom: 40px;
+    }
+
+    .navbar .logo {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .navbar .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    .navbar .contact-btn {
+      background-color: white;
+      color: #005757;
+      border: none;
+      padding: 5px 12px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+
+    /* 2nd Navbar (reversed order) */
+    .navbar.second {
+      justify-content: flex-start;
+      gap: 20px;
+    }
+
+    .navbar.second .logo {
+      margin-left: auto;
+    }
+
+    /* 3rd Navbar (logo in center) */
+    .navbar.third {
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .navbar.third .logo {
+      order: 2;
+      margin: 0 20px;
+    }
+
+    .navbar.third .nav-links {
+      order: 1;
+      flex: 1;
+    }
+
+    .navbar.third .contact-btn {
+      order: 3;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- First Navbar -->
+  <div class="navbar">
+    <div class="logo">B W C</div>
+    <div class="nav-links">
+      <a href="#">HOME</a>
+      <a href="#">ABOUT</a>
+      <a href="#">SERVICES</a>
+    </div>
+    <button class="contact-btn">CONTACT</button>
+  </div>
+
+  <!-- Second Navbar -->
+  <div class="navbar second">
+    <div class="nav-links">
+      <a href="#">HOME</a>
+      <a href="#">ABOUT</a>
+      <a href="#">SERVICES</a>
+    </div>
+    <button class="contact-btn">CONTACT</button>
+    <div class="logo">B W C</div>
+  </div>
+
+  <!-- Third Navbar -->
+  <div class="navbar third">
+    <div class="nav-links">
+      <a href="#">HOME</a>
+      <a href="#">ABOUT</a>
+      <a href="#">SERVICES</a>
+    </div>
+    <div class="logo">B W C</div>
+    <button class="contact-btn">CONTACT</button>
+  </div>
+
+</body>
+</html>
