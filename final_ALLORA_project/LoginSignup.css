@@ -1,0 +1,119 @@
+.login-signup-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', sans-serif;
+  z-index: 1;
+  color: white;
+}
+
+.form-card {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 3rem 2rem;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 0 20px #00ffff44;
+  z-index: 2;
+}
+
+.form-card h2 {
+  color: #00ffff;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 10px #0ff;
+}
+
+.form-card input {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.8rem 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  background-color: #111;
+  color: #fff;
+  box-shadow: 0 0 10px #00ffff33;
+}
+
+.glow-button {
+  background-color: #00ffcc;
+  color: #000;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  animation: pop 1s ease-in-out;
+}
+
+.glow-button:hover {
+  transform: scale(1.05);
+}
+
+.switch-text {
+  color: #ffccff;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  text-shadow: 0 0 5px #f0f;
+}
+
+.orbit-rings {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 200px;
+  height: 200px;
+  z-index: 0;
+}
+
+.ring {
+  position: absolute;
+  border: 2px dashed #00ffff44;
+  border-radius: 50%;
+  animation: rotate infinite linear;
+}
+
+.ring1 {
+  width: 150px;
+  height: 150px;
+  animation-duration: 15s;
+}
+
+.ring2 {
+  width: 100px;
+  height: 100px;
+  animation-duration: 8s;
+}
+
+.planet {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  font-size: 2rem;
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pop {
+  0% { transform: scale(0.9); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}

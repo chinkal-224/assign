@@ -1,0 +1,42 @@
+/* src/pages/HeroSection.css */
+.hero-container {
+  padding: 60px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ccffcc;
+  text-shadow: 0 0 8px #aaffaa;
+}
+
+.orange {
+  color: orange;
+  text-shadow: 0 0 10px orange;
+}
+
+.star {
+  margin-left: 6px;
+  font-size: 1.5rem;
+}
+
+.hero-subtitle {
+  color: cyan;
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+.hero-tagline {
+  color: white;
+  margin: 15px auto;
+  font-size: 1rem;
+  max-width: 500px;
+}
+
+.hero-buttons button {
+  font-weight: bold;
+  margin: 10px;
+}

@@ -1,0 +1,111 @@
+.about-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.about-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  padding: 3rem;
+  border-radius: 16px;
+  max-width: 800px;
+  box-shadow: 0 0 20px #00ffff44;
+}
+
+.about-heading {
+  font-size: 2.5rem;
+  color: #00ffff;
+  text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+  margin-bottom: 1.5rem;
+  animation: fadeInDown 1s ease-out;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.2rem;
+  animation: fadeIn 2s ease;
+}
+
+.highlight {
+  color: #ff99ff;
+  font-weight: bold;
+  text-shadow: 0 0 5px #f0f;
+}
+
+.about-signoff {
+  font-style: italic;
+  color: #ffd700;
+  animation: pulse 2s infinite ease-in-out;
+}
+
+/* Shooting Stars */
+.shooting-stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.star-shooting {
+  position: absolute;
+  width: 2px;
+  height: 80px;
+  background: linear-gradient(-45deg, #fff, transparent);
+  opacity: 0.8;
+  animation: shoot 3s linear infinite;
+}
+
+@keyframes shoot {
+  0% { transform: translate(100vw, -10vh) rotate(-45deg); opacity: 0; }
+  10% { opacity: 1; }
+  100% { transform: translate(-10vw, 100vh) rotate(-45deg); opacity: 0; }
+}
+
+/* Planets */
+.planet {
+  position: absolute;
+  font-size: 2rem;
+  animation: float 10s ease-in-out infinite;
+  z-index: 1;
+}
+
+.planet1 { top: 10%; left: 20%; animation-delay: 0s; }
+.planet3 { top: 60%; left: 10%; animation-delay: 4s; }
+.planet4 { top: 80%; left: 85%; animation-delay: 6s; }
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}

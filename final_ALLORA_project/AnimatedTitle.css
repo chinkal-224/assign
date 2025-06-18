@@ -1,0 +1,28 @@
+.allora-title {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffffaa;
+  animation: glowPulse 3s infinite ease-in-out;
+  margin-bottom: 1rem;
+}
+
+.allora-title .tagline {
+  font-size: 1.1rem;
+  display: block;
+  color: #ffffffcc;
+  text-shadow: 0 0 5px #00ffff;
+  margin-top: 0.3rem;
+}
+
+@keyframes glowPulse {
+  0% {
+    text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffffaa;
+  }
+  50% {
+    text-shadow: 0 0 20px #00ffff, 0 0 30px #00ffffcc;
+  }
+  100% {
+    text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffffaa;
+  }
+}

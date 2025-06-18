@@ -1,0 +1,99 @@
+.home-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1300px;
+}
+
+.left-section {
+  flex: 1;
+  padding-right: 30px;
+}
+
+.neon-title {
+  font-size: 2.8rem;
+  color: #94fbfb;
+  text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+  margin-bottom: 20px;
+  margin-top: 100px;
+ 
+}
+
+.welcome-text {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+  color: #e283ff;
+  text-shadow: #d650ff 0 0 5px, #d650ff 0 0 10px, #d650ff 0 0 20px;
+}
+
+.tagline {
+  font-size: 1.6rem;
+  color: #23ff86;
+  margin-bottom: 30px;
+  text-shadow: 0 0 5px #23ff86, 0 0 10px #23ff86, 0 0 20px #23ff86;
+}
+
+.hero-buttons .btn {
+  margin-right: 15px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 25px;
+  transition: transform 0.2s ease;
+}
+
+.hero-buttons .btn:hover {
+  transform: scale(1.08);
+}
+
+.right-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bouncing-emoji {
+  text-align: center;
+  animation: bounce 2s infinite;
+}
+
+.emoji {
+  font-size: 190px;
+}
+
+.mood-name {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  color: #eee;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+.btn{
+  background-color: rgb(255, 145, 55);
+}
+.welcome-user {
+  color: #00ffff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-right: 15px;
+  text-shadow: 0 0 5px #0ff;
+}

@@ -1,0 +1,282 @@
+/* src/pages/Explore.css */
+
+.explore-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  z-index: 2;
+  gap: 2rem;
+}
+
+/* LEFT SIDE */
+
+.explore-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.explore-left .glow {
+  font-size: 2.4rem;
+  color: #00f0ff;
+  text-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff;
+  margin-bottom: 0.5rem;
+}
+
+.explore-left p {
+  color: #ccc;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.explore-left label {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #ffc107;
+  font-size: 1.3rem;
+}
+
+.mood-orbit-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin-top: 1rem;
+}
+
+.orbit-circle {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  animation: rotateOrbit 10s linear infinite;
+}
+
+.center-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #111;
+  color: #fff;
+  border: 2px solid #00f0ff;
+  padding: 10px 20px;
+  border-radius: 50%;
+  z-index: 1;
+  text-shadow: 0 0 8px #00f0ff;
+}
+
+.orbit-emoji {
+  position: absolute;
+  font-size: 4rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.orbit-emoji:hover {
+  transform: scale(1.4);
+}
+
+/* Position 6 emojis around the orbit */
+.orbit-0 { top: 0; left: 50%; transform: translate(-50%, -50%); }
+.orbit-1 { top: 25%; left: 90%; transform: translate(-50%, -50%); }
+.orbit-2 { top: 75%; left: 90%; transform: translate(-50%, -50%); }
+.orbit-3 { top: 100%; left: 50%; transform: translate(-50%, -50%); }
+.orbit-4 { top: 75%; left: 10%; transform: translate(-50%, -50%); }
+.orbit-5 { top: 25%; left: 10%; transform: translate(-50%, -50%); }
+
+@keyframes rotateOrbit {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* When mood is selected */
+.selected-mood {
+  text-align: center;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.selected-mood h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 5px #0ff;
+}
+
+.big-emoji {
+  font-size: 16em;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* RIGHT SIDE */
+
+.explore-right {
+  flex: 1;
+  padding: 1rem;
+  
+}
+
+.explore-right textarea {
+  width: 100%;
+  min-height: 100px;
+  background: #0a0a23;
+  color: #fff;
+  border: 1px solid #888;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  resize: vertical;
+  font-size: 1rem;
+}
+
+.explore-right button {
+  background: #00ff88;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.explore-right button:hover {
+  transform: scale(1.05);
+  background-color: #00ffaa;
+}
+
+.entry-list {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 1rem;
+  border-top: 1px dashed #555;
+  padding-top: 1rem;
+}
+
+.entry-item {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.75rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+
+.entry-item p {
+  margin: 0.25rem 0;
+}
+
+.entry-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.entry-actions button {
+  padding: 4px 10px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.music-section {
+  margin-top: 2rem;
+}
+
+.music-section h4 {
+  color: #ffc107;
+  margin-bottom: 1rem;
+}
+
+.music-player {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.5rem;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+}
+
+.music-player p {
+  margin: 0 0 0.25rem 0;
+}
+/* Dropdown styling */
+select#mood-select {
+  padding: 10px;
+  border: 2px solid #ffd700;
+  background: #0d0d2b;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  outline: none;
+  box-shadow: 0 0 10px #ffd70044;
+  transition: 0.3s ease;
+}
+select#mood-select:hover {
+  box-shadow: 0 0 15px #ffd700aa;
+}
+.mood-chart-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.mood-bars {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  gap: 10px;
+  height: 200px;
+  padding: 10px 0;
+}
+
+.mood-bar-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.emoji-label {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.mood-bar {
+  width: 25px;
+  border-radius: 8px 8px 0 0;
+  background: #57f287;
+  box-shadow: 0 0 10px #57f287;
+}
+
+.mood-count {
+  font-size: 14px;
+  margin-top: 5px;
+  color: #ccc;
+}
+.song-item {
+  margin-bottom: 10px;
+}
+.song-item p {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+audio {
+  width: 100%;
+  max-width: 400px;
+}
+.mood-music-section {
+  margin-top: 20px;
+}
+

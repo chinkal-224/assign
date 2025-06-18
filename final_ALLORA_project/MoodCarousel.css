@@ -1,0 +1,23 @@
+/* src/components/MoodCarousel.css */
+.carousel-container {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.emoji-bounce {
+  animation: bounce 1s infinite;
+  font-size: 6rem;
+}
+
+.mood-name {
+  margin-top: 0.5rem;
+  color: #00ffcc;
+  font-size: 1.5rem;
+  text-shadow: 0 0 5px #00ffcc;
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}

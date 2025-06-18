@@ -1,0 +1,70 @@
+.starry-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse at bottom, #0a0a23 0%, #000 100%);
+  overflow: hidden;
+  z-index: -1;
+}
+
+.dynamic-stars {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: #ffff99;
+  border-radius: 50%;
+  box-shadow: 0 0 6px #ffff99;
+  animation: blink 2s infinite ease-in-out;
+  opacity: 0.6;
+}
+
+@keyframes blink {
+  0% { opacity: 0.2; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.5); }
+  100% { opacity: 0.2; transform: scale(1); }
+}
+
+/* Planets */
+.planet {
+  position: absolute;
+  font-size: 24px;
+  opacity: 0.8;
+  animation: floatPlanet 30s linear infinite;
+  z-index: 0;
+}
+
+.planet1 {
+  top: 20%;
+  left: 10%;
+  animation-duration: 40s;
+  font-size: 28px;
+}
+
+.planet2 {
+  top: 70%;
+  left: 80%;
+  animation-duration: 50s;
+  font-size: 32px;
+}
+
+.planet3 {
+  top: 40%;
+  left: 50%;
+  animation-duration: 60s;
+  font-size: 26px;
+}
+
+@keyframes floatPlanet {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(180deg); }
+  100% { transform: translateY(0px) rotate(360deg); }
+}
